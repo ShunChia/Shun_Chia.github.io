@@ -1,34 +1,404 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>個人網站 - 瘋.tw</title>
-    <!-- Bootstrap CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- 自訂 CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>瘋.tw — 個人網站</title>
+  <!-- 引入 Bootstrap 5 CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- 自訂 CSS -->
+  <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
-    <header class="bg-dark text-white p-3 text-center">
-        <h1>歡迎來到我的個人網站</h1>
-    </header>
-    <main class="container my-5">
-        <section>
-            <h2>關於我</h2>
-            <p>這裡展示個人簡介、專業經歷以及聯絡資訊，並融合科技感的設計元素。</p>
-        </section>
-        <section class="mt-5">
-            <h2>最新消息</h2>
-            <p>持續更新最新動態，敬請期待更多內容…</p>
-        </section>
-    </main>
-    <footer class="bg-light text-center py-3">
-        © 2025 個人網頁 All rights reserved.
-    </footer>
-    <!-- Bootstrap JS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- 自訂 JS -->
-    <script src="script.js"></script>
+  <!-- 導覽列 (固定於頂端) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">瘋.tw</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="切換導覽選單"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-end" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">關於我</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">經歷</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#papers">研討會 / 論文</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">照片集</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">聯絡方式</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 首頁主視覺 Hero Section -->
+  <section class="hero d-flex align-items-center justify-content-center">
+    <div class="text-center text-white">
+      <!-- Headshot (可選) -->
+      <img src="images/Headshot.jpg" alt="Headshot" class="rounded-circle mb-4 hero-headshot" />
+      <h1 class="display-5 fw-bold animate-fadein">電機工程 × 中央監控 × AI × IoT</h1>
+      <p class="lead mb-4 animate-fadein-delay">
+        與時俱進與不斷學習，開拓未來智慧生活
+      </p>
+      <a href="#about" class="btn btn-outline-light btn-lg px-4 rounded-pill animate-fadein-delay2">
+        了解更多
+      </a>
+    </div>
+  </section>
+
+  <main class="container py-5">
+    <!-- 關於我 About -->
+    <section id="about" class="my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <h2 class="mb-4 fw-bold border-bottom pb-2">關於我</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <p>
+                您好，我叫 <strong>張舜佳</strong>，出生於台北市北投區。目前就讀於
+                <strong>龍華科技大學電機工程系碩士班</strong>，並於
+                <strong>永碁科技股份有限公司</strong> 擔任工程師，已累積
+                5年以上中央監控相關的實務經驗。
+              </p>
+              <p>
+                我對電機領域充滿熱情，尤其在
+                <strong>中央監控、門禁系統、物聯網應用</strong> 等主題領域持續鑽研，
+                也參與多場研討會及競賽，獲得寶貴的學術與實作經驗。期許自己整合
+                AI、IoT 以及大樓能源管理等技術，為智慧建築與節能減碳做出貢獻。
+              </p>
+            </div>
+            <div class="col-md-6">
+              <p>
+                <strong>SWOT 分析</strong> <br/>
+                <em>優勢</em>：抗壓性強、責任感高、熟悉中央監控與IoT整合  
+                <br/>
+                <em>劣勢</em>：個性稍內向、英語能力有待加強  
+                <br/>
+                <em>機會</em>：少子化導致人才缺乏、物聯網需求快速成長  
+                <br/>
+                <em>威脅</em>：業界競爭者多、快速變動的科技環境
+              </p>
+              <p>
+                我深信「萬物皆可控」不再只是口號，透過不斷精進自己、與專家老師及業界前輩交流，
+                我們能讓智慧生活更便利、更安全、更有效率。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 工作經歷 + 學歷 Experience -->
+    <section id="experience" class="my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <h2 class="mb-4 fw-bold border-bottom pb-2">經歷</h2>
+          <div class="timeline">
+            <!-- 工作經驗 -->
+            <div class="timeline-item mb-4">
+              <div class="timeline-icon bg-primary">
+                <i class="bi bi-briefcase-fill text-white"></i>
+              </div>
+              <div class="timeline-content">
+                <h4>永碁科技股份有限公司 工程師 (2018 ~ 至今)</h4>
+                <p>
+                  - 負責大樓中央監控系統設計與整合  
+                  - 門禁系統、停車管理系統之施工與維運  
+                  - 現場工程規劃 (配管配線、設備選型、AutoCAD繪圖)  
+                  - 熟悉影像監控技術，曾與團隊共同完成多項大型專案
+                </p>
+              </div>
+            </div>
+            <!-- 學歷 -->
+            <div class="timeline-item mb-4">
+              <div class="timeline-icon bg-success">
+                <i class="bi bi-mortarboard-fill text-white"></i>
+              </div>
+              <div class="timeline-content">
+                <h4>龍華科技大學 碩士班 (2023 ~ 2025)</h4>
+                <p>
+                  - 研究領域：IoT 智慧監控、機電整合、建築節能  
+                  - 正在籌備論文：結合 AI 與大數據分析之中央空調能源最佳化  
+                  - 參與多次學術研討會與專案實習，強化產學合作
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-icon bg-success">
+                <i class="bi bi-mortarboard-fill text-white"></i>
+              </div>
+              <div class="timeline-content">
+                <h4>龍華科技大學 大學部 (2019 ~ 2023)</h4>
+                <p>
+                  - 電機工程學系畢業  
+                  - 打下電機理論與實作基礎，考取多張相關證照  
+                  - 於校內專題競賽、專業實習、學長姐指導中累積扎實能力
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 專業技能 -->
+          <div class="my-5">
+            <h3 class="fw-bold border-bottom pb-2">專業技能</h3>
+            <div class="row">
+              <div class="col-md-4">
+                <ul>
+                  <li>中央監控系統 (SCADA)</li>
+                  <li>門禁 / 攝影 / 停管系統</li>
+                  <li>工業電子、電氣配線</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <ul>
+                  <li>AutoCAD 國際認證</li>
+                  <li>室內配線乙級技術士</li>
+                  <li>工業電子丙級技術士</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <ul>
+                  <li>AI圖像辨識 (競賽經驗)</li>
+                  <li>線性回歸/決策樹/隨機森林</li>
+                  <li>初級救護技術員 EMT1</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 研討會 / 論文 Papers -->
+    <section id="papers" class="my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <h2 class="mb-4 fw-bold border-bottom pb-2">研討會 / 論文</h2>
+          <p>
+            我積極參與各項研討會、並發表研究成果或工作坊報告，不斷吸收最新科技趨勢並驗證所學。
+          </p>
+
+          <div class="accordion" id="accordionPapers">
+            <!-- 民生電子國際研討會 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingMinsheng">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseMinsheng"
+                  aria-expanded="true"
+                  aria-controls="collapseMinsheng"
+                >
+                  2023 民生電子國際研討會
+                </button>
+              </h2>
+              <div
+                id="collapseMinsheng"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingMinsheng"
+                data-bs-parent="#accordionPapers"
+              >
+                <div class="accordion-body">
+                  <strong>「冰水溫差對中央空調系統性能影響之線性回歸分析」</strong>  
+                  <br/>
+                  透過回歸模型探討不同冰水溫差對能耗的影響，提出初步節能策略。
+                </div>
+              </div>
+            </div>
+            <!-- 系統性創新研討會 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSysInnovation">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSysInnovation"
+                  aria-expanded="false"
+                  aria-controls="collapseSysInnovation"
+                >
+                  2024 系統性創新研討會
+                </button>
+              </h2>
+              <div
+                id="collapseSysInnovation"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingSysInnovation"
+                data-bs-parent="#accordionPapers"
+              >
+                <div class="accordion-body">
+                  <strong>「應用決策樹與隨機森林於商辦耗能識別之創新節能策略」</strong>  
+                  <br/>
+                  結合機器學習模型，快速偵測能源使用異常，幫助企業有效降本增效。
+                </div>
+              </div>
+            </div>
+            <!-- 離島研討會 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingIslands">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseIslands"
+                  aria-expanded="false"
+                  aria-controls="collapseIslands"
+                >
+                  二十二屆離島研討會
+                </button>
+              </h2>
+              <div
+                id="collapseIslands"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingIslands"
+                data-bs-parent="#accordionPapers"
+              >
+                <div class="accordion-body">
+                  於此研討會發表中央監控與物聯網結合之先期成果，並展示
+                  <em>「論文發表證明ID-25」</em>。
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 照片集 / 競賽得獎照片 Gallery -->
+    <section id="gallery" class="my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <h2 class="mb-4 fw-bold border-bottom pb-2">照片集</h2>
+          <p>
+            下方陳列部分研討會、競賽及證明照片，點擊可放大檢視。
+          </p>
+
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100 gallery-card">
+                <img
+                  src="images/iWCE2024 2.jpeg"
+                  class="card-img-top"
+                  alt="113年 民生國際研討會2"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">iWCE2024 民生電子國際研討會</h5>
+                  <p class="card-text">基於奇異值分解的影像壓縮技術及其應用效果分析</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 gallery-card">
+                <img
+                  src="images/iWCE2024 1.jpeg"
+                  class="card-img-top"
+                  alt="113年 民生國際研討會"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">iWCE2024 民生電子國際研討會</h5>
+                  <p class="card-text">Energy Consumption Forecasting in Commercial Buildings Using Transformer Model</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 gallery-card">
+                <img
+                  src="images/ITAOI 2024.png"
+                  class="card-img-top"
+                  alt="ITAOI2024 二十二屆離島研討會"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">ITAOI2024 二十二屆離島研討會</h5>
+                  <p class="card-text">結合遞歸神經網絡與時間特徵於能耗預測的策略探討</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 gallery-card">
+                <img
+                  src="images/WCE2023.jpg"
+                  class="card-img-top"
+                  alt="WCE2023 "
+                />
+                <div class="card-body">
+                  <h5 class="card-title">iWCE2023 民生電子國際研討會</h5>
+                  <p class="card-text">冰水溫差對中央空調系統性能影響之線性回歸分析</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 gallery-card">
+                <img
+                  src="images/SICH2024.jpg"
+                  class="card-img-top"
+                  alt="SICH2024"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">SICH2024 系統性創新研討會</h5>
+                  <p class="card-text">創新節能策略應用決策樹與隨機森林於商辦耗能識別</p>
+                </div>
+              </div>
+            </div>
+            <!-- 可視需要添加更多照片 -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 聯絡我 Contact -->
+    <section id="contact" class="my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <h2 class="mb-4 fw-bold border-bottom pb-2">聯絡方式</h2>
+          <p>
+            如需洽談任何合作專案、中央監控整合或 IoT 相關服務，歡迎透過以下方式聯繫我：
+          </p>
+          <ul>
+            <li>信箱：<strong>ss9008041234@gmail.com</strong></li>
+            <li>電話：<strong>0911-966-014</strong></li>
+            <li>目前所在地：<strong>台北市北投區</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 頁尾 Footer -->
+  <footer class="bg-dark text-white text-center p-4">
+    <p class="mb-0">© 2025 張舜佳 | 個人網站 | All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
+  <!-- 自訂 JS -->
+  <script src="script.js"></script>
+  <!-- Bootstrap Icons (Optional, 若要圖示可加) -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.js"
+  ></script>
 </body>
 </html>

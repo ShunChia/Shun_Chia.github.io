@@ -1,10 +1,145 @@
+/* 全域設定 */
 body {
+    font-family: "Apple SD Gothic Neo", "Arial", sans-serif;
     background-color: #f8f9fa;
-    font-family: 'Arial', sans-serif;
-}
-header {
-    background: linear-gradient(45deg, #343a40, #6c757d);
-}
-h1, h2 {
-    font-weight: bold;
-}
+    margin: 0;
+    padding-top: 56px; /* 給固定導覽列預留空間 */
+  }
+  
+  /* 導覽列 */
+  .navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    min-height: 80vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url("images/hero-bg.jpg") center/cover no-repeat;
+    /* 可將 hero-bg.jpg 替換為您喜歡的背景圖，若沒有可改為純漸層。 */
+    text-align: center;
+    position: relative;
+  }
+  
+  /* 大頭照 */
+  .hero-headshot {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid #fff;
+  }
+  
+  /* Hero 文字動畫 */
+  .animate-fadein {
+    animation: fadein 1.2s ease-in-out forwards;
+    opacity: 0;
+  }
+  .animate-fadein-delay {
+    animation: fadein 1.2s ease-in-out 0.5s forwards;
+    opacity: 0;
+  }
+  .animate-fadein-delay2 {
+    animation: fadein 1.2s ease-in-out 1s forwards;
+    opacity: 0;
+  }
+  @keyframes fadein {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+  
+  /* 各區塊標題 */
+  h2 {
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  /* Timeline 風格 (經歷區) */
+  .timeline {
+    position: relative;
+    margin-left: 2rem;
+  }
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    width: 2px;
+    height: 100%;
+    background: #ced4da;
+  }
+  .timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  .timeline-icon {
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .timeline-content {
+    margin-left: 50px;
+    background-color: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 0.25rem;
+    padding: 1rem;
+  }
+  
+  /* Gallery 卡片 */
+  .gallery-card img {
+    object-fit: cover;
+    height: 200px;
+  }
+  .gallery-card .card-body {
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  /* Accordion */
+  .accordion-button {
+    background-color: #e9ecef;
+    font-weight: 600;
+  }
+  .accordion-button:not(.collapsed) {
+    color: #0d6efd;
+    background-color: #dae0e5;
+  }
+  
+  /* 頁尾 Footer */
+  footer {
+    font-size: 0.9rem;
+  }
+  
+  /* 響應式調整 */
+  @media (max-width: 576px) {
+    .hero {
+      min-height: 60vh;
+    }
+    .timeline {
+      margin-left: 1rem;
+    }
+    .timeline::before {
+      left: 7px;
+    }
+    .timeline-icon {
+      left: -14px;
+    }
+    .timeline-content {
+      margin-left: 30px;
+    }
+  }
+  
