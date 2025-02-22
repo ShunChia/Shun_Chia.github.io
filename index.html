@@ -9,47 +9,42 @@
   <!-- 自訂 CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <!-- =============================== -->
   <!-- 導覽列 (固定於頂端) -->
+  <!-- =============================== -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
     <div class="container">
-      <!-- 統一品牌名稱，請依需求調整 -->
+      <!-- 品牌名稱 -->
       <a class="navbar-brand fw-bold" href="#">張舜佳</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="切換導覽選單">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" 
+              aria-expanded="false" aria-label="切換導覽選單">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <!-- 導覽連結 -->
       <div class="collapse navbar-collapse text-end" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">關於我</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#experience">經歷</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">專業技能</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#papers">研討會 / 論文</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#gallery">照片集</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">聯絡方式</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="#about">關於我</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">經歷</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">專業技能</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certs">證照</a></li>
+          <li class="nav-item"><a class="nav-link" href="#papers">研討會 / 論文</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">照片集</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">聯絡方式</a></li>
         </ul>
-      </div>      
+      </div>
     </div>
   </nav>
 
-  <!-- 首頁主視覺 Hero Section -->
+  <!-- =============================== -->
+  <!-- 首頁主視覺 (Hero) 區塊 -->
+  <!-- =============================== -->
   <section class="hero d-flex align-items-center justify-content-center">
     <div class="text-center text-white hero-content">
-      <!-- Headshot，alt 文本更新以符合無障礙需求 -->
+      <!-- 大頭照 -->
       <img src="images/Headshot.jpg" alt="張舜佳大頭照" class="rounded-circle mb-4 hero-headshot" />
-      <h1 class="display-5 fw-bold animate-fadein">電機工程 × 中央監控 × AI × IoT</h1>
+      <h1 class="display-6 fw-bold animate-fadein">電機工程 × 中央監控 × AIoT</h1>
       <p class="lead mb-4 animate-fadein-delay">
         與時俱進與不斷學習，開拓未來智慧生活
       </p>
@@ -59,8 +54,13 @@
     </div>
   </section>
 
+  <!-- =============================== -->
+  <!-- 主內容區 (Main Content) -->
+  <!-- =============================== -->
   <main class="container py-5">
-    <!-- 關於我 About -->
+    <!-- ------------------------------- -->
+    <!-- 關於我 (About) 區塊 -->
+    <!-- ------------------------------- -->
     <section id="about" class="my-5">
       <div class="row justify-content-center">
         <div class="col-lg-10">
@@ -73,19 +73,19 @@
                 <strong>永碁科技股份有限公司</strong> 擔任工程師，已累積 5 年以上中央監控相關的實務經驗。
               </p>
               <p>
-                我對電機領域充滿熱情，尤其在 <strong>中央監控、門禁系統、物聯網應用</strong> 等主題領域持續鑽研，並參與多場研討會與競賽，獲得寶貴的學術與實作經驗。期許自己整合 AI、IoT 以及大樓能源管理技術，為智慧建築與節能減碳做出貢獻。
+                我對電機領域充滿熱情，尤其在 <strong>中央監控、門禁系統、物聯網應用</strong> 等領域持續鑽研，並參與多場研討會與競賽，累積寶貴學術與實作經驗。期許自己整合 AI、IoT 與大樓能源管理技術，為智慧建築與節能減碳做出貢獻。
               </p>
             </div>
             <div class="col-md-6">
               <p>
                 <strong>SWOT 分析</strong><br/>
                 <em>優勢</em>：抗壓性強、責任感高、熟悉中央監控與 IoT 整合<br/>
-                <em>劣勢</em>：個性稍內向、英語能力有待加強<br/>
-                <em>機會</em>：少子化導致人才缺乏、物聯網需求快速成長<br/>
-                <em>威脅</em>：業界競爭者多、科技環境快速變動
+                <em>劣勢</em>：個性稍內向、英語能力有待提升<br/>
+                <em>機會</em>：少子化導致人才缺乏、物聯網需求迅速成長<br/>
+                <em>威脅</em>：業界競爭激烈、科技環境快速變動
               </p>
               <p>
-                我深信「萬物皆可控」不再只是口號，透過不斷精進自己、與專家及業界前輩交流，我們能讓智慧生活更便利、更安全且更高效。
+                我深信「萬物皆可控」不僅僅是口號，而是實踐智慧生活的關鍵。透過不斷精進與交流，我們能使生活更安全、更高效且更具創新性。
               </p>
             </div>
           </div>
@@ -93,13 +93,15 @@
       </div>
     </section>
 
-    <!-- 工作經歷 + 學歷 Experience -->
+    <!-- ------------------------------- -->
+    <!-- 工作經歷 + 學歷 (Experience) 區塊 -->
+    <!-- ------------------------------- -->
     <section id="experience" class="my-5">
       <div class="row justify-content-center">
         <div class="col-lg-10">
           <h2 class="mb-4 fw-bold border-bottom pb-2">經歷</h2>
           <div class="timeline">
-            <!-- 工作經驗 -->
+            <!-- 工作經驗項目 -->
             <div class="timeline-item mb-4">
               <div class="timeline-icon bg-primary">
                 <i class="bi bi-briefcase-fill text-white"></i>
@@ -108,36 +110,37 @@
                 <h4>永碁科技股份有限公司 工程師 (2018 ~ 至今)</h4>
                 <p>
                   - 負責大樓中央監控系統設計與整合<br/>
-                  - 門禁系統、停車管理系統之施工與維運<br/>
-                  - 現場工程規劃（配管配線、設備選型、AutoCAD 繪圖）<br/>
-                  - 熟悉影像監控技術，曾與團隊共同完成多項大型專案
+                  - 門禁系統、停車管理系統施工與維運<br/>
+                  - 現場工程規劃（配管、設備選型、AutoCAD 繪圖）<br/>
+                  - 與團隊合作完成多項大型專案，提升系統穩定性
                 </p>
               </div>
             </div>
-            <!-- 學歷 -->
+            <!-- 碩士學歷項目 -->
             <div class="timeline-item mb-4">
               <div class="timeline-icon bg-success">
                 <i class="bi bi-mortarboard-fill text-white"></i>
               </div>
               <div class="timeline-content">
-                <h4>龍華科技大學 碩士班 (2023 ~ 2025)</h4>
+                <h4>龍華科技大學 電機工程所 (2023 ~ 2025)</h4>
                 <p>
                   - 研究領域：IoT 智慧監控、機電整合、建築節能<br/>
-                  - 正在籌備論文：結合 AI 與大數據分析之中央空調能源最佳化<br/>
-                  - 參與多次學術研討會與專案實習，強化產學合作
+                  - 籌備論文：結合 AI 與大數據分析以達成中央空調能源最佳化<br/>
+                  - 多次參與學術研討會與實習專案，強化產學合作
                 </p>
               </div>
             </div>
+            <!-- 大學學歷項目 -->
             <div class="timeline-item">
               <div class="timeline-icon bg-success">
                 <i class="bi bi-mortarboard-fill text-white"></i>
               </div>
               <div class="timeline-content">
-                <h4>龍華科技大學 大學部 (2019 ~ 2023)</h4>
+                <h4>龍華科技大學 電機工程學系 (2019 ~ 2023)</h4>
                 <p>
                   - 電機工程學系畢業<br/>
-                  - 打下電機理論與實作基礎，考取多張相關證照<br/>
-                  - 於校內專題競賽、專業實習及學長姐指導中累積扎實能力
+                  - 建立扎實的電機理論與實作基礎，並考取多項專業證照<br/>
+                  - 透過專題競賽與實習累積豐富經驗
                 </p>
               </div>
             </div>
@@ -146,128 +149,249 @@
       </div>
     </section>
 
-    <!-- 專業技能 -->
-    <section id="skills" class="my-5">
-      <h3 class="fw-bold border-bottom pb-2 text-center">專業技能</h3>
-      <div class="row g-4">
-        <!-- 卡片 1：中央監控系統 (SCADA) -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body">
-              <h5 class="card-title text-primary"><i class="bi bi-speedometer2 me-2"></i>中央監控系統 (SCADA)</h5>
-              <ul class="list-unstyled">
-                <li><i class="bi bi-check-circle-fill text-success"></i> 系統架構設計與資料採集</li>
-                <li><i class="bi bi-check-circle-fill text-success"></i> 故障診斷與性能優化</li>
-                <li><i class="bi bi-check-circle-fill text-success"></i> IoT 裝置整合與遠端監控</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- 卡片 2：門禁/攝影/停管系統 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body">
-              <h5 class="card-title text-primary"><i class="bi bi-shield-lock me-2"></i>門禁/攝影/停管系統</h5>
-              <ul class="list-unstyled">
-                <li><i class="bi bi-check-circle-fill text-success"></i> 硬體設備選型與系統配置</li>
-                <li><i class="bi bi-check-circle-fill text-success"></i> 現場安裝與測試維護</li>
-                <li><i class="bi bi-check-circle-fill text-success"></i> 多系統整合實現集中管理</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- 卡片 3：工業電子、電氣配線 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body">
-              <h5 class="card-title text-primary"><i class="bi bi-lightning-charge me-2"></i>工業電子、電氣配線</h5>
-              <ul class="list-unstyled">
-                <li><i class="bi bi-check-circle-fill text-success"></i> 電路設計與配線規劃</li>
-                <li><i class="bi bi-check-circle-fill text-success"></i> 符合安全標準與施工規範</li>
-                <li><i class="bi bi-check-circle-fill text-success"></i> 現場故障排查與維修經驗</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- 卡片 4：AutoCAD 國際認證 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body">
-              <h5 class="card-title text-primary"><i class="bi bi-pencil-square me-2"></i>AutoCAD 國際認證</h5>
-              <ul class="list-unstyled">
-                <li><i class="bi bi-check-circle-fill text-success"></i> 精通 2D 工程圖與 3D 模型</li>
-                <li><i class="bi bi-check-circle-fill text-success"></i> 圖紙精準繪製與施工藍圖轉換</li>
-                <li><i class="bi bi-check-circle-fill text-success"></i> 設計理念轉化為實際應用</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- 卡片 5：室內配線乙級技術士 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body">
-              <h5 class="card-title text-primary"><i class="bi bi-house-door me-2"></i>室內配線乙級技術士</h5>
-              <ul class="list-unstyled">
-                <li><i class="bi bi-check-circle-fill text-success"></i> 熟悉國家施工規範與安全流程</li>
-                <li><i class="bi bi-check-circle-fill text-success"></i> 豐富的室內配線設計實作案例</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- 卡片 6：工業電子丙級技術士 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body">
-              <h5 class="card-title text-primary"><i class="bi bi-gear me-2"></i>工業電子丙級技術士</h5>
-              <ul class="list-unstyled">
-                <li><i class="bi bi-check-circle-fill text-success"></i> 工業自動化控制與實作經驗</li>
-                <li><i class="bi bi-check-circle-fill text-success"></i> 故障排除，確保系統穩定運行</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- 卡片 7：AI 圖像辨識 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body">
-              <h5 class="card-title text-primary"><i class="bi bi-camera me-2"></i>AI 圖像辨識</h5>
-              <ul class="list-unstyled">
-                <li><i class="bi bi-check-circle-fill text-success"></i> 熟練運用 TensorFlow 與 PyTorch</li>
-                <li><i class="bi bi-check-circle-fill text-success"></i> 參與多項圖像分類與檢測競賽</li>
-                <li><i class="bi bi-check-circle-fill text-success"></i> 智慧監控與影像分析應用</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- 卡片 8：數據分析與機器學習 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body">
-              <h5 class="card-title text-primary"><i class="bi bi-bar-chart-line me-2"></i>數據分析與機器學習</h5>
-              <ul class="list-unstyled">
-                <li><i class="bi bi-check-circle-fill text-success"></i> 線性回歸、決策樹、隨機森林</li>
-                <li><i class="bi bi-check-circle-fill text-success"></i> Python 與預測模型構建</li>
-                <li><i class="bi bi-check-circle-fill text-success"></i> 實務專案：能源效率提升</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- 卡片 9：初級救護技術員 (EMT1) -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body">
-              <h5 class="card-title text-primary"><i class="bi bi-heart-pulse me-2"></i>初級救護技術員 (EMT1)</h5>
-              <ul class="list-unstyled">
-                <li><i class="bi bi-check-circle-fill text-success"></i> 掌握基礎急救與現場應變</li>
-                <li><i class="bi bi-check-circle-fill text-success"></i> 國家認證與實際操作經驗</li>
-              </ul>
-            </div>
-          </div>
+<!-- =============================== -->
+<!-- 專業技能 (Skills) 區塊 -->
+<!-- =============================== -->
+<section id="skills" class="my-5">
+  <!-- 區塊標題 -->
+  <h3 class="fw-bold border-bottom pb-2 text-center">專業技能</h3>
+  <!-- 使用 Bootstrap 網格系統分三欄呈現各技能卡片 -->
+  <div class="row g-4">
+    <!-- 卡片 1：中央監控系統 (SCADA) -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <!-- 卡片標題與圖示 -->
+          <h5 class="card-title text-primary">
+            <i class="bi bi-speedometer2 me-2"></i>中央監控系統 (SCADA)
+          </h5>
+          <!-- 技能細節清單 -->
+          <ul class="list-unstyled">
+            <li><i class="bi bi-check-circle-fill text-success"></i> 規劃並設計整體監控架構</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> 資料採集與即時監控整合</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> 故障診斷及性能優化實務經驗</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> IoT 裝置協同運作，提升遠端管理效率</li>
+          </ul>
         </div>
       </div>
-    </section>
+    </div>
+    <!-- 卡片 2：門禁/攝影/停管系統 -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title text-primary">
+            <i class="bi bi-shield-lock me-2"></i>門禁/攝影/停管系統
+          </h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-check-circle-fill text-success"></i> 嚴謹的硬體設備選型與調試</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> 現場安裝、測試及後續維護</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> 多子系統整合，確保安全與穩定</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> 提供即時影像監控與數據備份方案</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 卡片 3：工業電子、電氣配線 -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title text-primary">
+            <i class="bi bi-lightning-charge me-2"></i>工業電子、電氣配線
+          </h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-check-circle-fill text-success"></i> 精準電路設計與系統規劃</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> 嚴格遵循安全標準與施工規範</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> 現場故障排查及維修實務</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> 客製化配線解決方案</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 卡片 4：AI 圖像辨識 -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title text-primary">
+            <i class="bi bi-camera me-2"></i>AI 圖像辨識
+          </h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-check-circle-fill text-success"></i> 掌握 TensorFlow 與 PyTorch 框架</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> 開發圖像分類與物件檢測應用</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> 整合 AI 技術於智慧監控系統</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> 優化影像處理流程，提高辨識準確率</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 卡片 5：數據分析與機器學習 -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title text-primary">
+            <i class="bi bi-bar-chart-line me-2"></i>數據分析與機器學習
+          </h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-check-circle-fill text-success"></i> 精通線性回歸、決策樹與隨機森林</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> 使用 Python 建構預測模型與資料視覺化</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> 實作專案改善能源效率與資源配置</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> 從大數據中提煉決策指標支援管理決策</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 新增卡片 6：智慧家庭 -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title text-primary">
+            <i class="bi bi-house me-2"></i>智慧家庭
+          </h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-check-circle-fill text-success"></i> 整合智能家電與 IoT 設備，打造智能化居家環境</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> 自動化控制：照明、溫控、安防與影音系統一體化管理</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> 遠程監控與管理，提升居家安全與節能效率</li>
+            <li><i class="bi bi-check-circle-fill text-success"></i> 支援語音控制與智能助手整合，提升生活便利性</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- 研討會 / 論文 Papers -->
+
+<!-- =============================== -->
+<!-- 證照 (Certifications) 區塊 - 優化後 -->
+<!-- =============================== -->
+<section id="certs" class="my-5">
+  <!-- 區塊標題 -->
+  <h3 class="fw-bold border-bottom pb-2 text-center">證照</h3>
+  <!-- 使用 Bootstrap 網格系統分三欄呈現證照卡片 -->
+  <div class="row g-4">
+    <!-- 以下證照卡片採用縮略圖＋「查看證照」按鈕，圖片統一使用 Certificates1~10 -->
+    <!-- 證照 1：乙級室內配線技術士 -->
+    <div class="col-md-4">
+      <div class="card certification-card h-100 border-0 shadow-sm" data-cert="cert1">
+        <div class="card-body text-center">
+          <h5 class="card-title text-primary">乙級室內配線技術士</h5>
+          <img src="images/Certificates1.jpg" alt="乙級室內配線技術士" class="cert-thumb rounded-circle">
+          <button class="btn btn-outline-primary btn-sm mt-2">查看證照</button>
+        </div>
+      </div>
+    </div>
+    <!-- 證照 2：乙級通信技術(電信線路)技術士 -->
+    <div class="col-md-4">
+      <div class="card certification-card h-100 border-0 shadow-sm" data-cert="cert2">
+        <div class="card-body text-center">
+          <h5 class="card-title text-primary">乙級通信技術(電信線路)技術士</h5>
+          <img src="images/Certificates2.jpg" alt="乙級通信技術(電信線路)技術士" class="cert-thumb rounded-circle">
+          <button class="btn btn-outline-primary btn-sm mt-2">查看證照</button>
+        </div>
+      </div>
+    </div>
+    <!-- 證照 3：丙級用電設備檢驗技術士 -->
+    <div class="col-md-4">
+      <div class="card certification-card h-100 border-0 shadow-sm" data-cert="cert3">
+        <div class="card-body text-center">
+          <h5 class="card-title text-primary">丙級用電設備檢驗技術士</h5>
+          <img src="images/Certificates3.jpg" alt="丙級用電設備檢驗技術士" class="cert-thumb rounded-circle">
+          <button class="btn btn-outline-primary btn-sm mt-2">查看證照</button>
+        </div>
+      </div>
+    </div>
+    <!-- 證照 4：丙級工業電子技術士 -->
+    <div class="col-md-4">
+      <div class="card certification-card h-100 border-0 shadow-sm" data-cert="cert4">
+        <div class="card-body text-center">
+          <h5 class="card-title text-primary">丙級工業電子技術士</h5>
+          <img src="images/Certificates4.jpg" alt="丙級工業電子技術士" class="cert-thumb rounded-circle">
+          <button class="btn btn-outline-primary btn-sm mt-2">查看證照</button>
+        </div>
+      </div>
+    </div>
+    <!-- 證照 5：丙級電腦硬體裝修技術士 -->
+    <div class="col-md-4">
+      <div class="card certification-card h-100 border-0 shadow-sm" data-cert="cert5">
+        <div class="card-body text-center">
+          <h5 class="card-title text-primary">丙級電腦硬體裝修技術士</h5>
+          <img src="images/Certificates5.jpg" alt="丙級電腦硬體裝修技術士" class="cert-thumb rounded-circle">
+          <button class="btn btn-outline-primary btn-sm mt-2">查看證照</button>
+        </div>
+      </div>
+    </div>
+    <!-- 證照 6：營造業甲種勞工安全衛生業務主管 -->
+    <div class="col-md-4">
+      <div class="card certification-card h-100 border-0 shadow-sm" data-cert="cert6">
+        <div class="card-body text-center">
+          <h5 class="card-title text-primary">營造業甲種勞工安全衛生業務主管</h5>
+          <img src="images/Certificates6.jpg" alt="營造業甲種勞工安全衛生業務主管" class="cert-thumb rounded-circle">
+          <button class="btn btn-outline-primary btn-sm mt-2">查看證照</button>
+        </div>
+      </div>
+    </div>
+    <!-- 證照 7：甲種勞工安全衛生業務主管 -->
+    <div class="col-md-4">
+      <div class="card certification-card h-100 border-0 shadow-sm" data-cert="cert7">
+        <div class="card-body text-center">
+          <h5 class="card-title text-primary">甲種勞工安全衛生業務主管</h5>
+          <img src="images/Certificates7.jpg" alt="甲種勞工安全衛生業務主管" class="cert-thumb rounded-circle">
+          <button class="btn btn-outline-primary btn-sm mt-2">查看證照</button>
+        </div>
+      </div>
+    </div>
+    <!-- 證照 8：AutoCAD國際認證 -->
+    <div class="col-md-4">
+      <div class="card certification-card h-100 border-0 shadow-sm" data-cert="cert8">
+        <div class="card-body text-center">
+          <h5 class="card-title text-primary">AutoCAD國際認證</h5>
+          <img src="images/Certificates8.jpg" alt="AutoCAD國際認證" class="cert-thumb rounded-circle">
+          <button class="btn btn-outline-primary btn-sm mt-2">查看證照</button>
+        </div>
+      </div>
+    </div>
+    <!-- 證照 9：三等業餘無線電人員執照 -->
+    <div class="col-md-4">
+      <div class="card certification-card h-100 border-0 shadow-sm" data-cert="cert9">
+        <div class="card-body text-center">
+          <h5 class="card-title text-primary">三等業餘無線電人員執照</h5>
+          <img src="images/Certificates9.jpg" alt="三等業餘無線電人員執照" class="cert-thumb rounded-circle">
+          <button class="btn btn-outline-primary btn-sm mt-2">查看證照</button>
+        </div>
+      </div>
+    </div>
+    <!-- 證照 10：EMT-1 救護技術員 -->
+    <div class="col-md-4">
+      <div class="card certification-card h-100 border-0 shadow-sm" data-cert="cert10">
+        <div class="card-body text-center">
+          <h5 class="card-title text-primary">EMT-1 救護技術員</h5>
+          <img src="images/Certificates10.jpg" alt="EMT-1 救護技術員" class="cert-thumb rounded-circle">
+          <button class="btn btn-outline-primary btn-sm mt-2">查看證照</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================== -->
+<!-- 證照詳細資訊模態視窗 (Certification Modal) -->
+<!-- =============================== -->
+<div class="modal fade" id="certModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="certModalTitle">證照詳細資訊</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="關閉"></button>
+      </div>
+      <div class="modal-body" id="certModalBody">
+        <!-- 詳細內容由 JavaScript 動態注入 -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- ------------------------------- -->
+    <!-- 研討會 / 論文 (Papers) 區塊 -->
+    <!-- ------------------------------- -->
     <section id="papers" class="my-5">
       <div class="row justify-content-center">
         <div class="col-lg-10">
@@ -276,7 +400,7 @@
             我積極參與各項研討會與學術論壇，並發表研究成果或工作坊報告，以不斷吸收最新科技趨勢並驗證所學。下列列出近年參與的主要活動及詳細說明：
           </p>
           <div class="accordion" id="accordionPapers">
-            <!-- 1. iWCE2024 民生電子國際研討會 -->
+            <!-- 研討會項目 1：iWCE2023 民生電子國際研討會 -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingMinsheng2023">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMinsheng2023" aria-expanded="true" aria-controls="collapseMinsheng2023">
@@ -290,7 +414,7 @@
                 </div>
               </div>
             </div>
-            <!-- 2. iWCE2024 民生電子國際研討會 (新增) -->
+            <!-- 研討會項目 2：iWCE2024 民生電子國際研討會 -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingMinsheng2024">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMinsheng2024" aria-expanded="false" aria-controls="collapseMinsheng2024">
@@ -300,18 +424,11 @@
               <div id="collapseMinsheng2024" class="accordion-collapse collapse" aria-labelledby="headingMinsheng2024" data-bs-parent="#accordionPapers">
                 <div class="accordion-body">
                   <strong>「智慧能源管理與節能減碳」</strong><br/>
-                  2024 年的民生電子國際研討會以「智慧能源管理與節能減碳」為主題，深入探討如何利用大數據與人工智慧技術優化中央空調系統的運作。研討會議程包括：
-                  <ul>
-                    <li>專題演講：介紹最新智慧能源管理技術與節能解決方案</li>
-                    <li>案例分享：展示多個企業透過數據分析成功降低能耗的實際案例</li>
-                    <li>互動研討：與會者共同討論如何在現有架構下進行技術改造與節能升級</li>
-                    <li>技術工作坊：實作環節教學如何運用 AI 模型預測空調系統能耗，並制定最佳運作策略</li>
-                  </ul>
-                  此次研討會旨在促進產業間的技術交流與創新，幫助企業在節能減碳的同時提升系統效率，為智慧建築的未來發展提供前瞻性指導。
+                  2024 年的民生電子國際研討會以「智慧能源管理與節能減碳」為主題，深入探討如何利用大數據與人工智慧技術優化中央空調系統運作。議程涵蓋專題演講、案例分享、互動討論及技術工作坊，旨在促進產業技術交流與節能改造。
                 </div>
               </div>
             </div>
-            <!-- 3. SICH2024 系統性創新研討會 -->
+            <!-- 研討會項目 3：SICH2024 系統性創新研討會 -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingSysInnovation">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSysInnovation" aria-expanded="false" aria-controls="collapseSysInnovation">
@@ -321,20 +438,20 @@
               <div id="collapseSysInnovation" class="accordion-collapse collapse" aria-labelledby="headingSysInnovation" data-bs-parent="#accordionPapers">
                 <div class="accordion-body">
                   <strong>「應用決策樹與隨機森林於商辦耗能識別之創新節能策略」</strong><br/>
-                  結合先進的機器學習演算法，本研討會探討如何利用決策樹與隨機森林技術，快速識別商辦建築中能源使用的異常情況，並制定創新性的節能策略。與會者將看到來自多個案例的實作成果，展示如何從數據中提煉出有效指標以實現節能降耗。
+                  結合先進機器學習演算法，本研討會探討如何利用決策樹與隨機森林技術，快速識別商辦建築中能源使用異常，並制定創新節能策略，從數據中提煉關鍵指標以實現節能降耗。
                 </div>
               </div>
             </div>
-            <!-- 4. ITAOI2024 離島資訊技術與應用研討會 -->
+            <!-- 研討會項目 4：ITAOI2024 離島研討會 -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingIslands">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIslands" aria-expanded="false" aria-controls="collapseIslands">
-                  ITAOI2024 離島資訊技術與應用研討會
+                  ITAOI2024 離島資訊研討會
                 </button>
               </h2>
               <div id="collapseIslands" class="accordion-collapse collapse" aria-labelledby="headingIslands" data-bs-parent="#accordionPapers">
                 <div class="accordion-body">
-                  於此研討會中，我發表了中央監控與物聯網結合的先期成果，並展示了<strong>「論文發表證明ID-25」</strong>。該會議主要聚焦於偏遠離島在智慧化管理與節能改造上的挑戰，並探討如何透過物聯網技術提升基礎設施效能。與會者對此創新模式表達高度關注，並進行了熱烈的討論。
+                  於此研討會中，我發表了中央監控與物聯網結合的先期成果。該會議聚焦於偏遠離島智慧管理與節能改造，探討如何利用物聯網技術提升基礎設施效能。
                 </div>
               </div>
             </div>
@@ -343,15 +460,16 @@
       </div>
     </section>
 
-    <!-- 照片集 / 競賽得獎照片 Gallery -->
+    <!-- ------------------------------- -->
+    <!-- 照片集 (Gallery) 區塊 -->
+    <!-- ------------------------------- -->
     <section id="gallery" class="my-5">
       <div class="row justify-content-center">
         <div class="col-lg-10">
           <h2 class="mb-4 fw-bold border-bottom pb-2">照片集</h2>
-          <p>
-            下方陳列部分研討會、競賽及證明照片，點擊可放大檢視。
-          </p>
+          <p>下方陳列部分研討會、競賽及證明照片，點擊可放大檢視。</p>
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+            <!-- 範例圖片卡片 -->
             <div class="col">
               <div class="card h-100 gallery-card">
                 <img src="images/iWCE2024 2.jpeg" class="card-img-top" alt="iWCE2024 民生電子國際研討會" />
@@ -372,9 +490,9 @@
             </div>
             <div class="col">
               <div class="card h-100 gallery-card">
-                <img src="images/ITAOI 2024.png" class="card-img-top" alt="ITAOI2024 離島資訊技術與應用研討會" />
+                <img src="images/ITAOI 2024.png" class="card-img-top" alt="ITAOI2024 離島研討會" />
                 <div class="card-body">
-                  <h5 class="card-title">ITAOI2024 離島資訊技術與應用研討會</h5>
+                  <h5 class="card-title">ITAOI2024 離島資訊研討會</h5>
                   <p class="card-text">結合遞歸神經網絡與時間特徵於能耗預測的策略探討</p>
                 </div>
               </div>
@@ -403,14 +521,14 @@
       </div>
     </section>
 
-    <!-- 聯絡我 Contact -->
+    <!-- ------------------------------- -->
+    <!-- 聯絡我 (Contact) 區塊 -->
+    <!-- ------------------------------- -->
     <section id="contact" class="my-5">
       <div class="row justify-content-center">
         <div class="col-lg-10">
           <h2 class="mb-4 fw-bold border-bottom pb-2">聯絡方式</h2>
-          <p>
-            如需洽談任何合作專案、中央監控整合或 IoT 相關服務，歡迎透過以下方式聯繫我：
-          </p>
+          <p>如需洽談任何合作專案、中央監控整合或 IoT 相關服務，歡迎透過以下方式聯繫我：</p>
           <ul>
             <li>信箱：<strong>ss9008041234@gmail.com</strong></li>
             <li>電話：<strong>0911-966-014</strong></li>
@@ -421,22 +539,53 @@
     </section>
   </main>
 
-  <!-- 頁尾 Footer -->
+  <!-- =============================== -->
+  <!-- 頁尾 (Footer) 區塊 -->
+  <!-- =============================== -->
   <footer class="bg-dark text-white text-center p-4">
     <p class="mb-0">© 2025 張舜佳 | 個人網站 | All rights reserved.</p>
   </footer>
 
-  <!-- Lightbox Modal (點擊照片放大瀏覽) -->
-  <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+ <!-- =============================== -->
+<!-- Lightbox Modal (點擊照片放大檢視) -->
+<!-- =============================== -->
+<div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="true" data-bs-keyboard="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <!-- 模態視窗標頭，包含一個關閉按鈕 -->
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="關閉"></button>
+      </div>
+      <!-- 模態視窗內容 -->
+      <div class="modal-body p-0">
+        <img src="" id="lightboxImage" class="img-fluid w-100" alt="放大檢視圖片">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- =============================== -->
+  <!-- 證照詳細資訊模態視窗 (Certification Modal) -->
+  <!-- =============================== -->
+  <div class="modal fade" id="certModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content bg-transparent border-0">
-        <div class="modal-body p-0">
-          <img src="" id="lightboxImage" class="img-fluid w-100" alt="放大檢視圖片">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="certModalTitle">證照詳細資訊</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="關閉"></button>
+        </div>
+        <div class="modal-body" id="certModalBody">
+          <!-- 詳細內容由 JavaScript 動態注入 -->
         </div>
       </div>
     </div>
   </div>
 
+  <!-- =============================== -->
+  <!-- 載入 JavaScript -->
+  <!-- =============================== -->
   <!-- Bootstrap 5 JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <!-- 自訂 JS -->

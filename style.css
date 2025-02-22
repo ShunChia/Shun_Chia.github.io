@@ -219,3 +219,18 @@ footer {
   transition: transform 0.1s ease;
   z-index: 9999;
 }
+/* 證照縮略圖樣式，設定固定尺寸且圓形 */
+.cert-thumb {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+}
+
+/* 證照模態視窗圖片樣式，設定最大寬度，讓圖片不會過大 */
+#certModalBody img {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+}
