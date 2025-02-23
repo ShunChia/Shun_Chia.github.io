@@ -146,7 +146,7 @@ section {
 
 /* 頁尾 Footer */
 footer {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 /* 響應式調整 */
@@ -233,4 +233,88 @@ footer {
   display: block;
   margin: 0 auto;
   max-width: 300px;
+}
+/* 證照縮略圖樣式：固定尺寸、圓形 */
+.cert-thumb {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+}
+
+/* 聯絡方式資訊 */
+.contact-info li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* 聯絡方式圖示樣式，縮小尺寸並置中 */
+.contact-icon {
+  max-width: 110px; /* 可根據需求微調 */
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 9999;
+}
+.back-to-top.show {
+  opacity: 1;
+}
+
+/* 以下為 */
+/* 聯絡方式資訊文字 */
+.contact-info li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* 聯絡方式圖示：限制圖片大小，最大寬度 80px（可根據需要調整） */
+.contact-icon {
+  max-width: 80px; /* 圖片最大寬度設定 */
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+}
+
+/* 聯絡圖塊外框樣式 */
+.contact-box {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  margin-top: 50px; /* 新增下移的間距 */
+  margin-bottom: 10px;
+}
+
+/* 聯絡圖塊標題 */
+.contact-box-header {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #007bff; /* 可依品牌色調調整 */
 }

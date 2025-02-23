@@ -55,7 +55,8 @@ document.addEventListener("DOMContentLoaded", function() {
   if (!backToTopButton) {
     backToTopButton = document.createElement("button");
     backToTopButton.id = "backToTop";
-    backToTopButton.innerHTML = '<i class="bi bi-arrow-up-short"></i>';
+    // 將圖示改為使用圖片 up.jpg，請確保圖片路徑正確（例如 images/up.jpg）
+    backToTopButton.innerHTML = '<img src="images/up.jpg" alt="回到頂端" style="width:40px; height:auto;">';
     backToTopButton.classList.add("back-to-top");
     document.body.appendChild(backToTopButton);
   }
@@ -96,9 +97,9 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   /**********************************/
-  /* 7. 證照卡片點擊事件與模態視窗   */
+  /* 7. 證照卡片點擊與模態視窗功能    */
   /**********************************/
-  // 證照詳細資訊資料（圖片檔名為 Certificates1.jpg ~ Certificates10.jpg）
+  // 證照詳細資訊資料（圖片檔名：Certificates1.jpg ~ Certificates10.jpg）
   const certDetails = {
     cert1: {
       title: "乙級室內配線技術士",
@@ -112,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function() {
     },
     cert3: {
       title: "丙級用電設備檢驗技術士",
-      description: "具備嚴謹的用電設備檢驗技能，能夠全面檢測工業設備，確保符合安全與節能標準，保障生產安全。",
+      description: "具備嚴謹的用電設備檢驗技能，能全面檢測工業設備，確保其符合安全與節能標準，保障生產安全。",
       image: "images/Certificates3.jpg"
     },
     cert4: {
@@ -146,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function() {
       image: "images/Certificates9.jpg"
     },
     cert10: {
-      title: "EMT-1 救護技術員",
+      title: "初級救護技術員 (EMT1)",
       description: "擁有基礎急救與現場應變能力，能在緊急情況下迅速提供救護支援，確保受傷者獲得及時救治。",
       image: "images/Certificates10.jpg"
     }
@@ -159,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const certKey = this.getAttribute('data-cert');
       const certData = certDetails[certKey];
       if (certData) {
-        // 更新模態視窗標題與內容，將圖片設定為縮小尺寸
+        // 更新模態視窗標題與內容，圖片以縮小尺寸（最大寬度 300px）
         document.getElementById('certModalTitle').textContent = certData.title;
         document.getElementById('certModalBody').innerHTML = `
           <p>${certData.description}</p>
@@ -170,8 +171,16 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
+// 8. 聯絡方式 - Line 與 膜王 Modal 點擊事件
+document.getElementById('lineContact').addEventListener('click', function() {
+  new bootstrap.Modal(document.getElementById('lineModal')).show();
+});
+document.getElementById('mmContact').addEventListener('click', function() {
+  new bootstrap.Modal(document.getElementById('mmModal')).show();
+});
+
   /**************************************/
-  /* 其他功能：如平滑滾動、回到頂端等功能 */
+  /* 其他功能：如 Gallery Lightbox、回到頂端、Intersection Observer 等 */
   /**************************************/
-  // (此處請將原有其他功能的程式碼整合進來)
+  // (請將其他功能的程式碼依據前述內容整合在此)
 });
