@@ -103,27 +103,27 @@ document.addEventListener("DOMContentLoaded", function() {
   const certDetails = {
     cert1: {
       title: "乙級室內配線技術士",
-      description: "具備專業室內配線設計與施工能力，能根據建築需求進行精細規劃，嚴格遵守安全規範，確保電力系統穩定運作。擁有豐富實際案例與工程經驗。",
+      description: "具備專業室內配線設計與施工能力，能根據建築需求進行精細規劃，嚴格遵守安全規範，確保電力系統穩定運作。擁有實際案例與工程經驗。",
       image: "images/Certificates1.jpg"
     },
     cert2: {
       title: "乙級通信技術(電信線路)技術士",
-      description: "熟悉通信網路設計、安裝與維護，確保通訊系統高效且穩定運作，滿足各項安全與技術標準。",
+      description: "熟悉通信網路、安裝與維護，確保通訊系統高效且穩定運作，滿足各項安全與技術標準。",
       image: "images/Certificates2.jpg"
     },
     cert3: {
       title: "丙級用電設備檢驗技術士",
-      description: "具備嚴謹的用電設備檢驗技能，能全面檢測工業設備，確保其符合安全與節能標準，保障生產安全。",
+      description: "具備嚴謹的用電設備檢驗能力，全面檢測電力系統，確保其符合電力相序與負載標準，保障設備安全。",
       image: "images/Certificates3.jpg"
     },
     cert4: {
       title: "丙級工業電子技術士",
-      description: "具備工業電子元件與控制系統維護能力，能迅速排查故障，確保工業生產系統穩定高效運作。",
+      description: "熟悉工業電子元件與電路板焊接能力，故障排查量測，確保電路板穩定高效運作。",
       image: "images/Certificates4.jpg"
     },
     cert5: {
       title: "丙級電腦硬體裝修技術士",
-      description: "專精於電腦硬體安裝、裝修與系統整合，提供穩定、高效的 IT 解決方案，滿足企業需求。",
+      description: "熟悉電腦硬體安裝、組配與架構整合，提供穩定、高效的 IT 解決方案，滿足企業需求。",
       image: "images/Certificates5.jpg"
     },
     cert6: {
@@ -133,17 +133,17 @@ document.addEventListener("DOMContentLoaded", function() {
     },
     cert7: {
       title: "甲種勞工安全衛生業務主管",
-      description: "展現卓越的企業內部安全管理能力，建立完善安全制度，有效預防職業災害，確保生產環境安全。",
+      description: "具備企業內部安全管理能力，建立完善安全制度，有效預防職業災害，確保生產環境安全。",
       image: "images/Certificates7.jpg"
     },
     cert8: {
       title: "AutoCAD國際認證",
-      description: "精通 AutoCAD 軟體操作，具備卓越的 2D 工程圖與 3D 模型繪製能力，能將設計理念轉化為工程藍圖，提升設計效率。",
+      description: "精通 AutoCAD 軟體操作，具備工程圖繪製能力，能將設計理念轉化為工程藍圖，提升設計效率。",
       image: "images/Certificates8.jpg"
     },
     cert9: {
       title: "三等業餘無線電人員執照",
-      description: "具備業餘無線電操作技能，能獨立設置與維護無線電系統，展現專業無線電愛好者的技術水準。",
+      description: "具備業餘無線電操作技能，能獨立設置與維護無線電系統。",
       image: "images/Certificates9.jpg"
     },
     cert10: {
